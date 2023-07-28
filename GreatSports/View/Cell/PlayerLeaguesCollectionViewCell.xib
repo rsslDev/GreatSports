@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlayerLeaguesCollectionViewCell" id="gTV-IL-0wX" customClass="PlayerLeaguesCollectionViewCell" customModule="GreatSports" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAY-BL-ajj">
+                        <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NW2-Qd-XHz">
+                                <rect key="frame" x="5" y="5" width="118" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" name="Gray08Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3g-oe-8QS">
+                                <rect key="frame" x="0.0" y="37" width="128" height="3"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="Wsr-KG-bpR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="Gray00Color "/>
+                        <constraints>
+                            <constraint firstItem="NW2-Qd-XHz" firstAttribute="top" secondItem="TAY-BL-ajj" secondAttribute="top" constant="5" id="8BD-TD-vwx"/>
+                            <constraint firstAttribute="trailing" secondItem="NW2-Qd-XHz" secondAttribute="trailing" constant="5" id="JqQ-uN-U4j"/>
+                            <constraint firstItem="I3g-oe-8QS" firstAttribute="top" secondItem="NW2-Qd-XHz" secondAttribute="bottom" id="L09-T2-MQM"/>
+                            <constraint firstAttribute="bottom" secondItem="I3g-oe-8QS" secondAttribute="bottom" id="Rk5-Xf-igV"/>
+                            <constraint firstItem="I3g-oe-8QS" firstAttribute="leading" secondItem="TAY-BL-ajj" secondAttribute="leading" id="RxU-ky-gKu"/>
+                            <constraint firstItem="NW2-Qd-XHz" firstAttribute="leading" secondItem="TAY-BL-ajj" secondAttribute="leading" constant="5" id="i4O-2V-Yoc"/>
+                            <constraint firstAttribute="trailing" secondItem="I3g-oe-8QS" secondAttribute="trailing" id="pDr-Im-W32"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TAY-BL-ajj" secondAttribute="trailing" id="CHd-1O-Y1P"/>
+                <constraint firstAttribute="bottom" secondItem="TAY-BL-ajj" secondAttribute="bottom" id="eOp-nJ-bS3"/>
+                <constraint firstAttribute="top" secondItem="TAY-BL-ajj" secondAttribute="top" id="jBb-vV-un1"/>
+                <constraint firstAttribute="leading" secondItem="TAY-BL-ajj" secondAttribute="leading" id="y0Q-uw-N1l"/>
+            </constraints>
+            <connections>
+                <outlet property="leagueTitleLabel" destination="NW2-Qd-XHz" id="aim-Tn-531"/>
+                <outlet property="selectedView" destination="I3g-oe-8QS" id="eS7-QC-oPB"/>
+            </connections>
+            <point key="canvasLocation" x="6" y="20"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Gray00Color ">
+            <color red="0.97299998998641968" green="0.98000001907348633" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray08Color">
+            <color red="0.32499998807907104" green="0.32499998807907104" blue="0.32499998807907104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
