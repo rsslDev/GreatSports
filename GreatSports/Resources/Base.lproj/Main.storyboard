@@ -172,6 +172,9 @@
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" name="Gray01Color"/>
                         </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="Gray00Color "/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         newNavBarAppearance.configureWithOpaqueBackground()
         newNavBarAppearance.backgroundColor = UIColor(named: "PrimaryColor")
         newNavBarAppearance.shadowColor = .clear
+        newNavBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        newNavBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
        
             let appearance = UINavigationBar.appearance()
        // appearance.configureWithOpaqueBackground()

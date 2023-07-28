@@ -39,6 +39,7 @@ class PlayerListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "Great Sports"
         setUpInterface()
         UINavigationBar.appearance().tintColor = UIColor.white
         self.playersTableView.keyboardDismissMode = .onDrag
@@ -216,43 +217,4 @@ extension PlayerListViewController:UICollectionViewDataSource,UICollectionViewDe
         }
         
     }
-}
-
-extension PlayerListViewController: UISearchControllerDelegate {
-    
-    
-    func didPresentSearchController(_ searchController: UISearchController) {
-        DispatchQueue.main.async {
-            searchController.searchBar.becomeFirstResponder()
-        }
-    }
-}
-
-extension PlayerListViewController: UISearchResultsUpdating,UISearchBarDelegate {
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder()
-    }
-    
-    func updateSearchResults(for searchController: UISearchController) {
-        
-        if let allList = playerViewModel.playersListModel.value?.data, allList.count > 0,let searchText = searchTextField?.text {
-            
-            filteredList = allList.filter { player in
-                return true
-            }
-            
-            self.playersTableView.reloadData()
-        }
-      
-        
-        
-    }
-    
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        //self.searchController.isActive = false
-        //dismiss(animated: true, completion: nil)
-    }
-    
-    
 }
